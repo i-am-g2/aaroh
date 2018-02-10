@@ -1,0 +1,295 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AAROHAN | Annual Sports Day, IIT Ropar</title>
+
+
+	<!-- Angular Js -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	
+	<link href = "img/title_icon.png" rel="icon">
+	<link rel="stylesheet" href="css/event.css" >
+	<script src="js/event.js"></script>
+</head>
+<body >
+	<img src="img/bg.jpg" style="position: fixed; width:100%;">
+	
+<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" style="background: #212121;">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="float: left;margin-left: 5px;">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+			</button>
+			<a id="home_button" class="navbar-brand" href="index.html"><img src="img/nav.png" style="max-height: 40px;margin-top: -10px;"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li class="active"><a href="events.html">Events</a></li>
+				<li><a href="team.html">The Team</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+      		</ul>
+		</div>
+	</div>
+</nav>
+<!-- End of Navigation Bar -->
+
+<div class="container" id="iContainer" >
+<div class="row" id="fRow" >
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#badminton_boys">
+	<div class="panel panel-default text-center" id="fPanel">
+		<div class="panel-heading" id="pHead" style="background: #cc6600;">
+			<h3>Badminton (Boys)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+
+			<!-- Image -->
+			<img src="img/icon/bad.png">
+		<br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background: #cc6600;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#badminton_girls">
+	<div class="panel panel-default text-center" id="fPanel" >
+		<div class="panel-heading" id="pHead" style="background-color: #cc66cc;">
+			<h3>Badminton (Girls)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			<!-- Image -->
+			<img src="img/icon/badmintonW.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #cc66cc;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#basketb">
+	<div class="panel panel-default text-center" id="fPanel">
+		<div class="panel-heading" id="pHead" style="background-color: #ff3366;">
+			<h3>Basketball</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			<!-- Image -->
+			<img src="img/icon/basketballB.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #ff3366;" >
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+</div>	
+
+<div class="row" id="fRow">
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel">
+		<div class="panel-heading" id="pHead" style ="background-color: #0099cc;">
+			<h3>Cricket</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+
+			<!-- Image -->
+			<img src="img/icon/cricket.png">
+		<br>
+		</div>
+		<div class="panel-footer" id="pFooter" style ="background-color: #0099cc;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel" >
+		<div class="panel-heading" id="pHead" style ="background-color: #00cc66;">
+			<h3>Football</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			<!-- Image -->
+			<img src="img/icon/foot.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter"  style ="background-color: #00cc66;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+	
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel"  >
+		<div class="panel-heading" id="pHead" style="background-color: #6633ff;">
+			<h3>VolleyBall (Boys)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			
+			<img src="img/icon/volley.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #6633ff;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+</div>
+
+<div class="row" id="fRow">
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel">
+		<div class="panel-heading" id="pHead" style="background-color: #339933;">
+			<h3>Table Tennis (Boys)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+
+			<!-- Image -->
+			<img src="img/icon/table_tennis.png">
+		<br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #339933;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel">
+		<div class="panel-heading" id="pHead" style="background-color: #cccc33;">
+			<h3>Table Tennis (Girls)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			<!-- Image -->
+			<img src="img/icon/table_tennisW.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #cccc33;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+
+	
+	
+	<div class="col-sm-4" id="fCol">
+	<div class="panel panel-default text-center" id="fPanel"  >
+		<div class="panel-heading" id="pHead" style="background-color: #ff9900;">
+			<h3>Tennis</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			
+			<img src="img/icon/lawn_tennis.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #ff9900;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+</div>
+	<div class="row" id="fRow">
+	<div class="col-sm-4" id="fCol">
+		<div class="panel panel-default text-center" id="fPanel" >
+		<div class="panel-heading" id="pHead" style="background-color: #9966ff;">
+			<h3>VolleyBall (Girls)</h3>
+		</div>
+		<div class="panel-body" id="pBody">
+			<!-- Image -->
+			<img src="img/icon/volleyballWA.png"><br>
+		</div>
+		<div class="panel-footer" id="pFooter" style="background-color: #9966ff;">
+			<h4>Details</h4>
+		</div>
+	</div>
+	</div>
+</div>
+
+</div>
+
+<!-- Modal Start of Badminton Boys-->
+<div id="badminton_boys" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Badminton Boys</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal end of Badminton Boys -->
+
+<!-- Modal Start of Badminton Girls-->
+<div id="badminton_girls" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header text-center" id="mH1">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title"><B>Badminton (Girls)</B></h3>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer" id="mf1">
+        	Register Now!
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal end of Badminton Girls -->
+
+<!-- Modal Start of Basketball-->
+<div id="basketb" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Basket Ball</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal end of Basketball -->
+
+
+
+
+
+
+</body>
+
+</html>
