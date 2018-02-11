@@ -3,12 +3,10 @@
 
 }
 #mH1 {
-	background-color: #666666;
-	color:#ffffff;
+	
 }	
 #mf1{
-	background-color: #666666;
-	color:#FFFFFF;
+	
 	text-align: center;
 }
 #fCol {
@@ -50,8 +48,8 @@
 
 #fRow{
 	padding-top: 15px;
-	background-color: #ffffff;
-}
+/*	background-color: #ffffff;
+*/}
 
 
 
@@ -66,6 +64,9 @@
 }
 body{
 	font-family: 'Roboto';
+	background-image: url("img/bg.jpg");
+	/*position: ;*/
+
 
 }
 
