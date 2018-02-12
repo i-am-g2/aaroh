@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	
 	<link href = "img/title_icon.png" rel="icon">
 	<link rel="stylesheet" href="css/event.css" >
@@ -22,7 +22,10 @@
 </head>
 <body  >
 	<div style="background-image: url(img/bg.jpg);background-attachment: fixed;">
- <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" style="background: #212121;">
+
+<!--  <div style="background-color:#5e899a;">
+ -->
+   <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" style="background: #212121;">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="float: left;margin-left: 5px;">
@@ -79,10 +82,10 @@
 	</div>
 	</div>
 
-	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#basketb">
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#basketball_boys">
 	<div class="panel panel-default text-center" id="fPanel">
 		<div class="panel-heading" id="pHead" style="background-color: #ff3366;">
-			<h3>Basketball</h3>
+			<h3>Basketball (Boys)</h3>
 		</div>
 		<div class="panel-body" id="pBody">
 			<!-- Image -->
@@ -97,7 +100,7 @@
 </div>	
 
 <div class="row" id="fRow">
-	<div class="col-sm-4" id="fCol">
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#cricket_">
 	<div class="panel panel-default text-center" id="fPanel">
 		<div class="panel-heading" id="pHead" style ="background-color: #0099cc;">
 			<h3>Cricket</h3>
@@ -114,7 +117,7 @@
 	</div>
 	</div>
 
-	<div class="col-sm-4" id="fCol">
+	<div class="col-sm-4" id="fCol" data-toggle="modal" data-target="#football_">
 	<div class="panel panel-default text-center" id="fPanel" >
 		<div class="panel-heading" id="pHead" style ="background-color: #00cc66;">
 			<h3>Football</h3>
@@ -131,7 +134,7 @@
 
 	
 	<div class="col-sm-4" id="fCol">
-	<div class="panel panel-default text-center" id="fPanel"  >
+	<div class="panel panel-default text-center" id="fPanel"  data-toggle="modal" data-target="#volleyball_boys">
 		<div class="panel-heading" id="pHead" style="background-color: #3366cc;">
 			<h3>VolleyBall (Boys)</h3>
 		</div>
@@ -149,7 +152,7 @@
 
 <div class="row" id="fRow">
 	<div class="col-sm-4" id="fCol">
-	<div class="panel panel-default text-center" id="fPanel">
+	<div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tt_boys">
 		<div class="panel-heading" id="pHead" style="background-color: #339933;">
 			<h3>Table Tennis (Boys)</h3>
 		</div>
@@ -167,7 +170,7 @@
 
 
 	<div class="col-sm-4" id="fCol">
-	<div class="panel panel-default text-center" id="fPanel">
+	<div class="panel panel-default text-center" id="fPanel" data-toggle="modal" data-target="#tt_girls">
 		<div class="panel-heading" id="pHead" style="background-color: #cccc33;">
 			<h3>Table Tennis (Girls)</h3>
 		</div>
@@ -253,18 +256,38 @@
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Badminton Boys</h4>
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Badminton (Boys)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">Chitkara<br>IIT Ropar A</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
   </div>
 </div>
@@ -275,47 +298,294 @@
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header text-center" id="mH1">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h3 class="modal-title"><B>Badminton (Girls)</B></h3>
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Badminton (Girls)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">RGI Ropar<br>JUIT</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <a href="#">
-	      <div class="modal-footer" id="mf1">
-	        	<h1>Register Now!</h1>
-	      </div>
-  	</a>
-    </div>
 
   </div>
 </div>
 <!-- Modal end of Badminton Girls -->
 
 <!-- Modal Start of Basketball-->
-<div id="basketb" class="modal fade" role="dialog">
+<div id="basketball_boys" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Basket Ball</h4>
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Basketball (Boys)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">Chitkara<br>JUIT</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
   </div>
 </div>
 <!-- Modal end of Basketball -->
 
+<!-- Modal Start of Cricket-->
+<div id="cricket_" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Cricket</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">JUIT<br>IIT Ropar Students</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- Modal end of Cricket -->
+
+<!-- Modal Start of Football-->
+<div id="football_" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Football</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">Rayat Bahra<br>IIT Ropar</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- Modal end of football -->
+
+<!-- Modal Start of Basketball-->
+<div id="volleyball_boys" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Volleyball (Boys)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">IIT Mandi<br>IET Bhaddal</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- Modal end of Bolleyball Boys -->
+
+<!-- Modal Start of Tt boys-->
+<div id="tt_boys" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Table Tennis (Boys)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">Rayat Bahra <br>Chitkara</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- Modal end of Basketball -->
+
+<!-- Modal Start of Basketball-->
+<div id="tt_girls" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title text-center">Table Tennis (Girls)</h2>
+        </div>
+        <div class="modal-body">
+          <div class="main-model">
+            <div class="rule-div mod">
+              <h2><i class="fas fa-book"></i><span style="padding-left: 10px;">Rule Book</span></h2>
+              <a target="_blank" class="btn btn-info btn-lg" style="margin:auto;display:table;">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <br>
+            </div>
+            <hr>
+            <div class="past-winner-div mod">
+              <h2><i class="fas fa-trophy"></i><span style="padding-left: 10px;">Past Winners</span></h2>
+              <h4 style="padding-left: 50px;">Rayat Bahra<br>Govt. College Ropar</h4>
+            </div>
+            <hr>
+            <div class="contact-div mod">
+              <h2><i class="fas fa-address-book"></i><span style="padding-left: 10px;">Contacts</span></h2>
+              <div style="padding-left: 50px;">
+              	<h4>J P Amit<br>
+              +91-730 770 4387<br></h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success" id="reg_btn">Register</button></a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- Modal end of Basketball -->
 
 </div>
 <!-- Footer -->
